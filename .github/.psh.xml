@@ -15,7 +15,6 @@
   |_|
 
     ]]></header>
-    <import path="tests"/>
     <import path="**/*"/>
-    <path>actions</path>
+    <path>.</path>
 </psh>
