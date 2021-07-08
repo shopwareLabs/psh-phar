@@ -26,11 +26,11 @@ jobs:
         with:
           php-version: "${{ matrix.php-version }}"
 
-#      - shell: bash
-#        run: chmod +x psh.phar
+      - shell: bash
+        run: cp psh.phar .github
 
       - name: execute example scripts
         run: |
-          ./psh.phar
-          ./psh.phar test
-          ./psh.phar test-env --env=ci
+          .github/psh.phar
+          .github/psh.phar test
+          .github/psh.phar test-env --env=ci
