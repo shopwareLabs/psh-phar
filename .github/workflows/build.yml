@@ -30,7 +30,8 @@ jobs:
         run: cp psh.phar .github
 
       - name: execute example scripts
+        working-directory: .github
         run: |
-          .github/psh.phar
-          .github/psh.phar test
-          .github/psh.phar test-env --env=ci
+          ./psh.phar
+          ./psh.phar test
+          ./psh.phar test-env --env=ci
